@@ -1,0 +1,67 @@
+:root {
+    --background-color-light: #E0F7FA;
+    --background-color-dark: #263238;
+    --text-color-light: #37474F;
+    --text-color-light-secondary: #546E7A;
+    --text-color-dark: #ECEFF1;
+    --text-color-dark-secondary: #CFD8DC;
+    --card-background-light: #F8F9FA;
+    --card-background-dark: #37474F;
+}
+
+body.light-theme {
+    background-color: var(--background-color-light);
+    color: var(--text-color-light);
+}
+
+body.light-theme .team-member-card {
+    background-color: var(--card-background-light);
+}
+
+body.light-theme .team-member-card h3 {
+    color: var(--text-color-light);
+}
+
+body.light-theme .team-member-card p {
+    color: var(--text-color-light-secondary);
+}
+
+body.dark-theme {
+    background-color: var(--background-color-dark);
+}
+
+body.dark-theme .team-member-card {
+    background-color: var(--card-background-dark);
+}
+
+body.dark-theme .team-member-card h3 {
+    color: var(--text-color-dark);
+}
+
+body.dark-theme .team-member-card p {
+    color: var(--text-color-dark-secondary);
+}
+
+.theme-button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000; 
+}
+
+.theme-button img {
+    width: 4rem;
+}
+
+@media(max-width: 344px) {
+    .theme-button {
+        right: .5rem;
+    }
+
+    .theme-button img {
+        width: 3rem;
+    }
+}
