@@ -1,3 +1,5 @@
+import './TeamMemberCard.css'
+
 export function TeamMemberCard({ name, role, image }) {
     return (
         <div className="team-member-card">
